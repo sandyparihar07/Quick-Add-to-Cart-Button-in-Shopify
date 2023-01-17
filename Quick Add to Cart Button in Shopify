@@ -1,0 +1,9 @@
+Below is the code to show quick add to cart button on Shopify, you can use this code for the showing add to cart button below the product on anypage.
+
+<form method="post" action="/cart/add" style="text-align: center">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+
+                <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+
+                <input type="submit" value="ADD TO CART" class="btn">
+              </form>
